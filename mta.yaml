@@ -23,6 +23,9 @@ modules:
         properties:
           key: ServiceName_1
           service: '~{products-service-name}'
+      - name: hdi_db
+        properties:
+          TARGET_CONTAINER: '~{hdi-container-name}'
   - name: core_xsjs
     type: nodejs
     path: core_xsjs
